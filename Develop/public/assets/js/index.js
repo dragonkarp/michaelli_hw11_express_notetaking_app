@@ -3,9 +3,18 @@ var $noteText = $(".note-textarea");
 var $saveNoteBtn = $(".save-note");
 var $newNoteBtn = $(".new-note");
 var $noteList = $(".list-container .list-group");
+// var $getStartedBtn = $("#button");
 
 // activeNote is used to keep track of the note in the textarea
 var activeNote = {};
+
+// // $ Listener for the get started button
+// $getStartedBtn.on("click", () => {
+//   $.ajax({
+//     url: "http://localhost:3000",
+//     method: "GET"
+//   })
+// })
 
 // A function for getting all notes from the db
 var getNotes = function() {
